@@ -7,7 +7,7 @@
 
 #define DHTPIN 2     // pin connected to DHT sensor
 #define DHTTYPE DHT11   // DHT 11
-#define LOOP_DELAY 3000
+#define LOOP_DELAY 10000
 #define HUMIDITY_NAME "humidity"
 #define TEMPERATURE_NAME "temperature"
 #define HEAT_INDEX_NAME "heat_index"
