@@ -51,7 +51,7 @@ bool registerDevice()
 // Builds the data enpoint URL
 String buildUrl(String propname)
 {
-    return HOME_MANAGER_DATA_URL + _id + "/" + propname;
+    return HOME_MANAGER_DATA_URL + _id + "/data/" + propname;
 }
 
 // Builds body for data send
