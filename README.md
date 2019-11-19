@@ -13,7 +13,7 @@ Registration to a HomeManager server produces an ID for the device. This ID is u
 
 The device is an ESP8266ex board connected to a DHT11.
 
-![Wiring scheme](https://github.com/a-liut/home-temp-sensor/tree/master/images/wiring.png)
+![Wiring scheme](https://github.com/a-liut/home-temp-sensor/blob/master/images/wiring.png)
 
 ## TODO
 - Integrate MQTT
