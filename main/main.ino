@@ -1,10 +1,3 @@
-#include "arduino_secrets.h"
-#include "home_manager.h"
-
-#include "DHT.h"
-#include <ESP8266WiFi.h>
-#include <ESP8266HTTPClient.h>
-
 #define DHTPIN 2     // pin connected to DHT sensor
 #define DHTTYPE DHT11   // DHT 11
 #define LOOP_DELAY 10000
@@ -12,6 +5,13 @@
 #define TEMPERATURE_NAME "temperature"
 #define HEAT_INDEX_NAME "heat_index"
 #define CELSIUS "°C"
+
+#include "arduino_secrets.h"
+#include "home_manager.h"
+
+#include "DHT.h"
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
 
 // Initialize DHT sensor.
 DHT dht(DHTPIN, DHTTYPE);
@@ -50,6 +50,7 @@ void connectToNetwork()
         Serial.println("Connecting...");
     }
     Serial.println("Connected!");
+    Serial.println(WiFi.localIP());
 }
 
 void registerThisDevice()

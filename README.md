@@ -1,7 +1,7 @@
 # home-temp-sensor
 IoT device that reads temperature and humidity and sends their values to a HomeManager server.
 
-## How does it works
+## How does it work
 The device connects to the network and registers itself to a HomeManager server.
 Its main task is to sense temperature and humidity and store those values in the HomeManager server.
 

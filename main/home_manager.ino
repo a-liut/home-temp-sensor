@@ -76,7 +76,6 @@ int sendData(String propname, float val, const char *unit)
     char body[100];
     buildBody(body, val, unit);
 
-    //Serial.printf("url: %s\n", url);
     Serial.println(url);
     http.begin(url);
     http.addHeader("Content-Type", "application/json");
